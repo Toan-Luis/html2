@@ -1,0 +1,13 @@
+h1 {
+    color:red;
+}
+
+#first-heading {
+    color: blueviolet;
+}
+/* Dùng #<Tên id> để gọi ID */
+
+.second-heading {
+    color:green;
+}
+/* Dùng .<Tên class> để gọi tên class */
