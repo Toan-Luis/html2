@@ -1,0 +1,28 @@
+#header1 {
+    color: lightskyblue;
+}
+/* 100 */
+.header2 {
+    color: black;
+}
+/* 10 */
+h2 {
+    color: red;
+}
+/* 1 */
+h2.header2 {
+    color: yellow;
+}
+/* 11 */
+#header1.header1 {
+    color: gray;
+}
+/* 110 nên sẽ lớn hơn #header */
+* {
+    color: palegoldenrod;
+}
+/* 0 */
+html {
+    color: chocolate;
+}
+/* 0 */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 20px;
+        }
+        .div1 {
+            width: 50%;
+            /* Ở đây đang phụ thuộc vào thẻ body */
+            height: 100px;
+            background-color: red;
+        }
+        html {
+            font-size: 40px;
+        }
+        .div1 {
+            font-size: 0.5rem;
+            /* Ở đây đang phụ thuộc vào thẻ html->20px */
+        }
+        #div2 {
+            font-size: 30px;
+        }
+       #header2 {
+            font-size: 0.5em;
+            /* Phụ thuộc vào thẻ div bọc ở gần nhất */
+       }
+       #div3 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+       }
+       #div4 {
+        width: 20vw;
+        height: 20vh;
+        background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <!-- Absolute units: Tuyệt đối
+        px -->
+    <h1>CSS units</h1>
+    
+    <!-- Relative uints: Tương đối
+        %:Phụ thuộc vào thẻ đang chứa nó
+        rem: Phụ thuộc vào thẻ html
+        em: Phụ thuộc vào thẻ gần nhất có thuộc tính đó
+        vw:Chiếm bao nhiều % chiều dài trình duyệt
+        vh:Chiếm bao nhiêu % chiều rộng của trình duyệt -->
+    <div class="div1">Đây là văn bản</div>
+    <div id="div2">
+        <h2 id="header2">Header 2</h2>
+    </div>
+    <div id="div3">
+        <div id="div4"></div>
+    </div>
+</body>
+</html>
