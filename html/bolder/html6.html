@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .box1 {
+            background-color: blue;
+        }
+        .box2 {
+            background-color: rgb(255, 145, 0);
+            border-top-width: 10px;
+            /* Xét kích thước ở mỗi chiều */
+        }
+        .box3 {
+            background-color: rgb(255, 0, 93);
+            border-width: 10px;
+            border-style: solid;
+            /* Kiểu solid có đọ dày mặc định là 2px */
+            /* Viết tắt: 
+               border: 10px solid #333 -> <4 hướng> <kiểu viền> <màu>
+                Không cần thuộc tính nào thì bỏ thuộc tính đó */
+        }
+    </style>
+</head>
+<body>
+    <!-- Viền -->
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
+    <!-- border-width: độ dày viền
+         border-style: kiểu viền -->
+    <!-- Viền cũng tính vào kích thước của phần tử -->
+</body>
+</html>

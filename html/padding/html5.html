@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .box1 {
+            background-color: blue;
+        }
+        .box2 {
+            background-color: rgb(255, 145, 0);
+        }
+        .box3 {
+            background-color: rgb(255, 0, 93);
+            padding-top: 20px;
+            /* đệm 20px ở trên */
+            /* Viết tắt: padding: 10px 10px; -> <trên+dưới> <trái+phải>; 
+                         padding: 10px 20px 10px -> <trên> <trái+phải> <dưới>;
+                         padding: 10px 20px 10px 20px -> <trên> <phải> <dưới> <trái> (thep chiều kim đồng hồ)
+                         padding: 10px; <cả 4 bên> */
+        }
+    </style>
+</head>
+<body>
+    <!-- Đệm -->
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <!-- Padding cũng tính vào tổng kích thước của element -->
+</body>
+</html>
