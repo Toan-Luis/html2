@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .box {
+            width: 100%;
+            height: 100vh;
+            background-image: url(/html/image/439880678_436164355731696_624003300105787754_n.jpg);
+            /* Đường dẫn này có thể từ máy tính hoặc từ nguồn nào đó trên mạng */
+            /* Giá trị none->k đặt hình nền(default) */
+            /* ảnh sau sẽ đề lên ảnh trước */
+            background-repeat: no-repeat;
+            /* repeat: lặp lại theo cả trục x và y(default)
+               repeat-x: theo trục x
+               repeat-y: theo trục y
+               no-repeat: không lặp
+               space: lặp lại có khoảng cách(hình ảnh đầu và cuối được ghim vào 2 bên của phần tử,
+                lặp lại nhiều lần nhất có thể và tự thêm khoảng trắng phù hợp )
+               round: Hình nền được lặp lại và bị ép hoặc kéo dài để lấp đầy khoảng trống */
+            /* Có thể dùng thuộc tính này để tạo ra một bức ảnh lớn từ một bức ảnh nhỏ nhưng chiếm ít 
+                dung lượng hơn */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- background-image -->
+    <!-- Theo mặc định, thuộc tính bg-im sẽ đặt ảnh ở góc trên bên trái của phần tử và lặp lại theo cả chiều dọc và chiều ngang -->
+    <!-- ở đây, thẻ div có display là block nên sẽ có chiều ngang bằng với thẻ cha nó(thẻ body)
+        kết hợp với height: 100vh nên sẽ lặp lại từ trên xuống dưới và từ trái sang phải -->
+    <!-- background-repeat:lặp lại hình ảnh -->
+</body>
+</html>
