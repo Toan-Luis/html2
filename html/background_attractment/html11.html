@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/html/image/332156619_747490080319356_5907281193404182232_n.jpg);
+            background-attachment: scroll;
+            /* 	scroll: cuộn theo(default)
+                fixed: không cuộn theo */
+        }
+        .box2 {
+            height: 100px;
+            width: 400px;
+            overflow: scroll;
+            background-image: url(/html/image/439880678_436164355731696_624003300105787754_n.jpg);
+            background-attachment: local;
+            /* local: cuộn theo content trong box con(mặc định là fixed) */
+        }
+    </style>
+</head>
+<body>
+    <!-- cho phép nền cuộn theo phần còn lại của trang hay không -->
+    <div class="box"></div>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dignissimos exercitationem consectetur iste. Corporis libero quidem repudiandae neque eaque adipisci aliquam magnam? Suscipit maxime, amet eum culpa impedit laboriosam delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate vel rerum laudantium veritatis et harum quo voluptas at, quam reiciendis sequi deleniti eaque, earum accusantium, provident fuga reprehenderit architecto.
+        Quo quaerat nemo omnis provident. Eaque magnam quos impedit consequatur dolore atque quo hic ab dignissimos ratione voluptatum expedita soluta repudiandae ducimus voluptatem libero eius incidunt molestias minima, recusandae accusantium!
+        Nostrum, voluptatum molestias corporis omnis quis nisi tempore, adipisci sed magni eum earum? Pariatur beatae fugiat est? Obcaecati alias nisi in nulla consectetur omnis, delectus mollitia vero doloremque, ipsum deserunt.
+        Voluptates ducimus tempora vel quasi neque nisi, eligendi soluta! Possimus ea autem totam cum officia unde. Exercitationem recusandae dicta laudantium, porro reprehenderit, tempore minus sequi praesentium inventore distinctio maxime quis?
+        Soluta atque, ipsa impedit aperiam provident tempora maxime laboriosam facilis vitae veniam libero omnis! Cumque consequuntur laudantium recusandae accusantium impedit sapiente unde ipsam tempore nobis. Perspiciatis earum voluptatibus cumque quas?</p>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur, atque maxime eaque consequuntur inventore natus suscipit voluptatibus esse dicta vero repellat fugiat exercitationem nobis, neque tempore maiores debitis? Eos.</p>
+        </div>
+    </div>
+</body>
+</html>
