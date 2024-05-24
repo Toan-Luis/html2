@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 700px;
+            height: 650px;
+            padding: 200px;
+            border: 100px dotted red;
+            background-clip: border-box;
+            /* nền đổ từ border, và background đang để repeat nên sẽ lặp ảnh ra ngoài border */
+            /* background-repeat: no-repeat; */
+            background-origin: padding-box;
+            /* Gốc ảnh sẽ bắt đầu từ padding(default)
+               border-box: bắt đầu từ border
+               content-box: bắt đầu từ nội dung */
+            background-image: url(/html/image/111880189_p0_master1200.jpg);
+        }
+    </style>
+</head>
+<body>
+    <!-- background-origin: là thuộc tính chỉ định điểm bắt đầu đổ của ảnh -->
+    <div class="box1"></div>
+</body>
+</html>

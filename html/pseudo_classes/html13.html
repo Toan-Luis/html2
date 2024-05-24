@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Với link */
+        .L:link {
+            color:rgb(0, 8, 255);
+        }
+        /* tác động khi liên kết chưa đươc thăm */
+        .L:visited {
+            color: violet;
+        }
+        /* tác động khi liên kết đã đươc thăm */
+        .L:hover {
+            font-size: 30px;
+        }
+        /* tác động khi ta di chuột qua, phải đứng sau :link và :visited */
+        .L:active {
+            color: red;
+        }
+        /* tác động khi ta click vào, phải đứng sau :hover */
+    </style>
+</head>
+<body>
+    <!-- Một lớp giả được sử dụng để xác định trạng thái đặc biệt của một phần tử. -->
+    <div>
+        <!-- Cú pháp  -->
+        <!-- selector:pseudo-class(link,visited,...) {
+             property(một kiểu thuộc tính css:color, font-size,...): value(giá trị);
+             } -->
+        <a class="L" href="https://translate.google.com/?hl=vi&sl=en&tl=vi&text=property&op=translate">Đây là môt liên kết</a>
+    </div>
+</body>
+</html>
