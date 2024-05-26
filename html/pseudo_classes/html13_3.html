@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:not(.VB) {
+            background-color: yellow;
+        }
+        /* chọn tất cả thẻ p trừ các thẻ p có class là VB */
+        /* <selector> có thể là các selector đã học, pseudo class,... */
+        .VB:not(:nth-last-of-type(2)) {
+            font-style: italic
+        }
+        /* chọn tất cả thẻ có class là VB trừ các thẻ là con thứ 2 từ dưới lên */
+    </style>
+</head>
+<body>
+    <!-- lớp giả phủ định ":not(<selector>)" -> chọn các phần tử trừ các <selector> được chọn -->
+    <div>
+        <p class="VB">đây là văn bản 1</p>
+        <p>đây là văn bản 2</p>
+        <p>đây là văn bản 3</p>
+        <p>đây là văn bản 4</p>
+        <p class="VB">đây là văn bản 5</p>
+        <p class="VB">đây là văn bản 6</p>
+    </div>
+</body>
+</html>

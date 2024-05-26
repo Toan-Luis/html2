@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-weight: bold;
+        }
+        p:first-child {
+            color: violet;
+        }
+        /* :first-child -> chọn thẻ con đầu tiên */
+        p:last-child {
+            color: red;
+        }
+        /* :last-child -> chọn thẻ con cuối cùng */
+        p:nth-child(3) {
+            color: green;
+        }
+        /* :nth-child(n) ->tác động đến thẻ thứ n, có thể thay n bằng odd hoặc even để chọn lẻ hoặc chẵn */
+        p:nth-last-child(3) {
+            color: blue;
+        }
+        /* :nth-last-child(n) -> như trên nhưng từ dưới lên */
+        p:only-child {
+            color: yellow;
+            font-size: large;
+        }
+        /* các thuộc tính: 
+           :first-of-type
+           :last-of-type 
+           :nth-of-type(n)
+           :only-of-type
+           đều có tác dụng như các thẻ trên chỉ khác là chọn theo loại
+           ví dụ: */
+           h4:first-of-type {
+            color: yellowgreen;
+           }
+        /* chọn thẻ h4 là con đầu tiên */
+    </style>
+</head>
+<body>
+    <div class="child">
+        <p>Đây là văn bản</p>
+        <h4>Đây là tiêu đề</h4>
+        <p>Đây là văn bản</p>
+        <h4>Đây là tiêu đề</h4>
+        <p>Đây là văn bản</p>
+        <h4>Đây là tiêu đề</h4>
+        <p>Đây là văn bản</p>
+        <h4>Đây là tiêu đề</h4>
+        <p>Đây là văn bản</p>
+        <h4>Đây là tiêu đề</h4>
+        <p>Đây là văn bản</p>
+        <p>Đây là văn bản</p>
+        <p>Đây là văn bản</p>
+    </div>
+    <div>
+        <p>thẻ con duy nhất</p>
+    </div>
+</body>
+</html>
