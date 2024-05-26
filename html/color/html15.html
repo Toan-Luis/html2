@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255,0,0,0.1);
+        }
+        /* 3 màu cơ bản: red, green, blue. Mỗi màu chạy từ 0->255 */
+        /* Giá trị cuối cùng là alpha để chỉnh độ trong suốt từ 0->1 */
+        .color2 {
+            width: 100px;
+            height: 100px;
+            background-color: #f1131155;
+        }
+        /* #000000 mỗi 2 số tượng trưng cho 1 màu, từ trái qua phải là red->green->blue, 2 số cuối là alpha */
+        /* Nếu 4 cặp số đều có 2 số giống nhau có thể viết tắt thành một số #0002*/
+        .color3 {
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+        }
+        .color4 {
+            width: 100px;
+            height: 100px;
+            color: rgb(192, 8, 137);
+            /* màu hiện tại */
+            outline: 10px solid red;
+            background-color: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <!-- có nhiều cách để khai báo màu -->
+    <!-- Cách 1: dùng mã rgb -->
+    <div class="color1"></div>
+    <!-- Cách 2: dùng mã màu thập lục phân -->
+    <div class="color2"></div>
+    <!-- Cách 3: dùng tên màu -->
+    <div class="color3"></div>
+    <!-- Cách 4: dùng currentcolor (màu-color hiện tại) -->
+    <div class="color4"></div>
+</body>
+</html>

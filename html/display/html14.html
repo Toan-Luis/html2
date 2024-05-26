@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .text_1 {
+            display: inline;
+            height: 100px;
+            width: 100px;
+        }
+        strong {
+            padding: 20px;
+        }
+        /* inline -> hiển thị trên một dòng (default). Mọi thuộc tính chiều cao và chiều rộng đều không có hiệu lực */
+        .text_2 {
+            display: block;
+            height: 50px;
+        }
+        /* block -> hiển thị bắt đầu trên một dòng và chiếm toàn bộ chiều rộng của thẻ cha */
+        .text_3 {
+            display: inline-block;
+            height: 100px;
+        }
+        /* inline-block:Hiển thị trên một dòng (nội tuyến) nhưng vẫn áp dụng được chiều rộng và chều cao */
+        
+    </style>
 </head>
 <body>
-    
+    <!-- Thuộc tính display: chỉ định hành vi hiển thị (loại hộp đề xuất) của phần tử -->
+    <p class="text_1">đây là <strong>văn</strong> bản 1</p>
+    <p class="text_2">đây là văn bản 2</p>
+    <p class="text_3">đây là văn bản 3</p>
+    <p class="text_4">đây là văn bản 4</p>
+    <p class="text_5">đây là văn bản 5</p>
 </body>
 </html>
