@@ -18,10 +18,34 @@
             font-size: 30px;
         }
         /* tác động khi ta di chuột qua, phải đứng sau :link và :visited */
+        .hover2 {
+            height: 50px;
+            background-color: yellow;
+            display: none;
+        }
+        .hover1:hover p {
+            display: block;
+        }
+        /* tác động đến thẻ .hover2 khi di chuột qua .hover1(.hover2 là con của .hover1) */
         .L:active {
             color: red;
         }
         /* tác động khi ta click vào, phải đứng sau :hover */
+        /* các thuộc tính trên đều áp dụng được với các thẻ html khác */
+        .no_content {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to right, purple, pink, red);
+        }
+        /* selecter:empty -> tác động lên thẻ không có nội dung */
+        .no_thing{
+            height: 200px;
+        }
+        #tag1:target {
+            color:green;
+        }
+        /* #news:target -> tác dụng lên phần tử có id khớp với URL */
+        /* tag_name:target ->tác dụng lên phần tử có id khớp với URL */
     </style>
 </head>
 <body>
@@ -32,6 +56,16 @@
              property(một kiểu thuộc tính css:color, font-size,...): value(giá trị);
              } -->
         <a class="L" href="https://translate.google.com/?hl=vi&sl=en&tl=vi&text=property&op=translate">Đây là môt liên kết</a>
+        <div class="hover1">
+            Hover
+            <p class="hover2">Test</p>
+        </div>
+        <div class="no_content"></div>
+        <a href="#tag1">đây là liên kết</a>
+        <a href="#tag2">đây là liên kết</a>
+        <div class="no_thing"></div>
+        <p id="tag1">đây là phần tử liên kết chỉ đến</p>
+        <p id="tag2">đây là phần tử liên kết chỉ đến</p>
     </div>
 </body>
 </html>
