@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            white-space: normal;
+        }
+        /* normal(default): nhiều khoảng trắng hoặc nhiều dấu xuống dòng -> một khoảng trắng duy nhất và xuống dòng khi đến lề */
+        .p2 {
+            white-space: nowrap;
+        }
+        /* nowrap: nhiều khoảng trắng hoặc dấu xuống dòng -> một khoảng trắng và không xuống dòng cho đến kho gặp thẻ <br> */
+        .p3 {
+            white-space: pre;
+        }
+        /* pre: giữ nguyên định dạng code, hoạt động như thẻ pre */
+        .p4 {
+            white-space: pre-line;
+        }
+        /* pre-line: nhiều khoảng trắng -> một khoảng trắng và ngắt dòng khi chạm lề hoặc ta cho xuống dòng */
+        .p5 {
+            white-space: pre-wrap;
+        }
+        /* pre-wrap: giữ nguyên định dạng code và xuống dòng khi gặp lề và khi ta ngắt dòng */
+        .p6 {
+            word-break: normal;
+        }
+        /* normal(default): ngắt từ cuối cùng 
+           break-all: ngắt các chữ thừa của từ cuối cùng */
+    </style>
+</head>
+<body>
+    <!-- white-space: quy định về khoảng trắng của phần tử -->
+    <p class="p1">đây                                               
+    là văn bản 1</p>
+    <p class="p2">đây là văn bản 2 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dolor dicta, exercitationem fugit unde sunt facere aliquid modi itaque, reprehenderit velit vitae molestias impedit, distinctio eligendi voluptates tempore magnam aliquam.
+    Perspiciatis ea culpa, labore dolor ex aliquam voluptatem reiciendis, explicabo illum velit quod possimus ducimus numquam consequatur eos quis? Quisquam reprehenderit excepturi molestias laudantium sed officiis deserunt beatae, maiores tenetur.
+    Dignissimos voluptas velit atque natus ad placeat reprehenderit exercitationem totam odit ex recusandae in hic obcaecati quae suscipit tempora pariatur accusantium eaque tenetur veniam ipsum, maiores consectetur. Facere, voluptas doloribus.
+    Dicta deleniti molestiae, tempora at facilis nisi adipisci impedit alias nostrum corrupti quisquam ipsam ea est unde reiciendis labore. Minima animi illum obcaecati doloribus, delectus aut expedita nesciunt tempore architecto.
+    Nulla, temporibus eius obcaecati a reiciendis laboriosam dolores eligendi unde tempore vitae nisi non totam atque beatae laudantium velit. Ab, maiores? Consectetur repudiandae soluta similique nostrum eum aut deserunt quasi.</p>
+    <p class="p3">
+    đây là văn bản 3 
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea iste quo impedit ex consequatur non animi blanditiis earum dicta odit sint illum, amet, corrupti neque fugiat deserunt esse dolorum dolores.</p>
+    <pre>đây là văn bản
+        ..........................            ............
+    </pre>
+    <p class="p4">đây là văn bản 4                     a
+        đây là vb
+    </p>
+    <p class="p5">đây                                                               là Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis neque possimus aliquid, facere nobis sequi. Repudiandae eaque, veritatis explicabo id temporibus delectus atque incidunt voluptatibus. Numquam, esse exercitationem? Tempore, amet.</p>
+    <!-- word-break: chỉ định cách ngắt dòng khi đến cuối dòng -->
+    <p class="p6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, excepturi veniam nemo quis dolor suscipit delectus praesentium earum recusandae, doloremque magnam quia, placeat beatae consectetur magniaaaaaaaaaaaaaaaaaaaaaaaaaa eius! Accusamus, voluptatibus delectus.</p>
+</body>
+</html>
