@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .TD1 {
+            position: relative;
+            top: 40px;
+        }
+        /* relative (vị trí tương đối): lấy vị trí ban đầu làm gốc tọa độ */
+        .box {
+            height: 300px;
+            width: 100%;
+            background-color: #938e8e;
+            position: relative;
+        }
+        .TD2 {
+            margin: 0;
+            border: 2px solid red;
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            background-color: #225aca;
+        }
+        /* absolute: tìm thẻ cha gần nhất có thuộc tính position làm gốc tọa độ
+           top: lấy góc trên làm gốc, tiến xuống dưới
+           right: lấy góc phải làm gốc, tiến sang trái
+           left: .........trái ......., ..........phải
+           bottom: .......dưới.........,..........trên
+           mặc định là top:0; left:0;
+           nếu không cho kích thước thì element sẽ thay đổi kích thước để dãn sao cho phù hợp với vị trí được cho
+           nếu cho kích thước ban đầu thì sẽ ưu tiên top và left trước */
+        .header1 {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            position: fixed;
+            margin: 50px 0px;
+        }
+        .empty {
+            height: 2000px;
+        }
+        /* fixed: element luôn cố định dù có kéo scroll bar */
+        .header2 {
+            color: white;
+            background-color: rgb(35, 202, 13);
+            position: sticky;
+            position: -webkit-sticky;
+            top: 10px;
+            /* hộ trợ cho safari */
+        }
+        /* sticky (bám dính): kéo đến vị trí chỉ định rồi dừng lại ở đó */
+    </style>
+</head>
+<body>
+    <!-- position: thiết lập vị trí hiển thị của các element -->
+    <!-- sau đó element sẽ được thiết lập vị trí bằng các thuộc tính top, right, bottom, left
+     trục tọa độ hướng xuống (các thuộc tính này sẽ không hoạt động trừ khi position được đặt trước) -->
+    <h2 class="TD1">đây là tiêu đề 1</h2>
+    <div class="box">
+        <h2 class="TD2">đây là tiêu đề 2</h2>
+    </div>
+    <div class="header1"></div>
+    <div class="header2">sticky</div>
+    <div class="empty"></div>
+</body>
+</html>
