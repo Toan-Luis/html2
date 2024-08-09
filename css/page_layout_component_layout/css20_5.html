@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.5rem;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .box {
+            background-color: blueviolet;
+        }
+
+        .box1 {
+            height: 100px;
+        }
+
+        .container {
+            background-color: aqua;
+            display: flex;
+            margin-top: 40px;
+            height: 200px;
+            justify-content: space-evenly;
+        }
+
+        .container_1 {
+            align-items: stretch;
+            /* kéo dãn các phần tử dài bằng container(mặc định) */
+        }
+
+        .container_2 {
+            align-items: flex-start;
+            /* dồn về cross start(các phần tử bị kéo dãn do stretch sẽ quay trở về kích thước ban đầu)  */
+        }
+
+        .container_3 {
+            align-items: flex-end;
+            /* dồn về cross end(các phần tử bị kéo dãn do stretch sẽ quay trở về kích thước ban đầu)  */
+        }
+
+        .container_4 {
+            align-items: center;
+            /* dồn về giữa(các phần tử bị kéo dãn do stretch sẽ quay trở về kích thước ban đầu)  */
+        }
+
+        .box1_5 {
+            font-size: larger;
+        }
+
+        .container_5 {
+            align-items: baseline;
+            /* căn theo đường cơ sở(các phần tử bị kéo dãn do stretch sẽ quay trở về kích thước ban đầu)  */ 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display: flex
+         align-items sẽ căn các phân tử theo chiều của trục cross axis -->
+    <div class="container container_1">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+    </div>
+    <div class="container container_2">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+    </div>
+    <div class="container container_3">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+    </div>
+    <div class="container container_4">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+    </div>
+    <div class="container container_5">
+        <div class="box box1 box1_5">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+    </div>
+</body>
+
+</html>
