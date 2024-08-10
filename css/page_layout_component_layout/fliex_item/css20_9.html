@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            height: 300px;
+            margin-top: 30px;
+            align-items: flex-start;
+        }
+
+        .box1 {
+            align-self: flex-start;
+            /* đồn box1 về cross start */
+        }
+
+        .box2 {
+            align-self: center;
+            /* đồn box2 về giữa của cross axis */
+        }
+
+        .box3 {
+            align-self: flex-end;
+            /* đồn box3 về cross end */
+        }
+
+        .box4 {
+            align-self: baseline;
+            /* dồn box4 về chân đường cơ sơ */
+        }
+
+        .box5 {
+            align-self: stretch;
+            /* kéo dài box5 cho bằng với container */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display: flex
+        align-self: tác động đến các phần tử nhỏ trong container theo chiều của cross axis -->
+    <div class="container container_1">
+        <div class="box box1">Block1</div>
+        <div class="box box2">Block2</div>
+        <div class="box box3">Block3</div>
+        <div class="box box4">Block4</div>
+        <div class="box box5">Block5</div>
+    </div>
+</body>
+
+</html>
