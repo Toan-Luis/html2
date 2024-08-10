@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            height: 300px;
+        }
+
+        .box {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            flex-grow: 3;
+            /* chiếm 3 phần */
+        }
+
+        .box2 {
+            flex-grow: 4;
+            /* chiếm 4 phần */
+        }
+
+        .box3 {
+            flex-grow: 2;
+            /* chiếm 2 phần */
+        }
+        /* Tổng là 9 */
+        /* Giá trị mặc định là 0: có kích thước bằng nội dung mà nó chứa */
+    </style>
+</head>
+<body>
+    <!-- display: flex
+        flex-grow; chia tỷ lệ của các item theo trọng số -->
+    <div class="container">
+        <div class="box box1">Block1</div>
+        <div class="box box2">Block2</div>
+        <div class="box box3">Block3</div>
+    </div>
+</body>
+</html>

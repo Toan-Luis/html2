@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.3rem;
+        }
+
+        .box {
+            width: 30%;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            height: 300px;
+        }
+        .container_1 {
+            flex-flow: wrap row-reverse;
+            /* xuống dòng và đổi chiều main axis */
+        }
+    </style>
+</head>
+<body>
+    <!-- flex-flow: gộp 2 giá trị của flex-wrap và flex-direction lại -->
+    <div class="container container_1">
+        <div class="box box1">Block 1</div>
+        <div class="box box2">Block 2</div>
+        <div class="box box3">Block 3</div>
+        <div class="box box4">Block 4</div>
+        <div class="box box5">Block 5</div>
+        <div class="box box6">Block 6</div>
+        <div class="box box7">Block 7</div>
+        <div class="box box8">Block 8</div>
+    </div>
+</body>
+</html>
