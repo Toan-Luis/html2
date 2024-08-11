@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            height: 300px;
+        }
+
+        .box {
+            background-color: aqua;
+            border: 1px solid black;
+            width: 30%;
+        }
+
+        .box1 {
+            flex-shrink: 0;
+            /* Không co lại */
+        }
+
+        .box2 {
+            flex-shrink: 1;
+            /* Mặc định */
+        }
+
+        .box3 {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- display: flex
+        Flex-shrink:Xác định khả năng co lại của otem nếu cần
+        Khi số lượng item nhiều lên thì các phần tử sẽ tự động co lại, để điều chỉnh sự co lại thì dùng flex-shrink
+        Khi ta co trình duyệt lại thì độ co sẽ thay đổi tương ứng với tỉ lệ màn hình, nhưng khi đạt đến độ co tối thiểu
+        thì sẽ không co nữa(Tức là chạm đến nội dung) -->
+    <div class="container">
+        <div class="box box1">Block1</div>
+        <div class="box box2">Block2</div>
+        <div class="box box3">Block3</div>
+        <div class="box box4">Block4</div>
+        <div class="box box5">Block5</div>
+        <div class="box box6">Block6</div>
+    </div>
+</body>
+</html>
